@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Pikachu</title>
+    <link rel="icon" type="image/icon" href="./images/logo.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="main" style="background-image: url(./images/bg.jpg)">
+      <div class="main__board">
+        <div class="main__board__wrap">
+          <div class="main__info">
+            <div class="">
+              <button class="menu__btn">Trang chủ</button>
+              <button class="again__btn">Choi lai</button>
+            </div>
+            <div class="level">
+              <span>Chọn cấp độ</span>
+              <select class="level__select" name="" id=""></select>
+            </div>
+            <div class="">
+              <button class="fix__btn">Sửa map</button>
+              <button class="help__btn">Trợ giúp</button>
+            </div>
+            <h5>Điểm</h5>
+            <span class="current__score">1</span>
+            <h5>Cấp độ</h5>
+            <span class="current__level">1</span>
+            <h5>Vòng</h5>
+            <span class="current__round">1</span>
+            <h5 class="blood">Máu</h5>
+            <span class="current__blood">1</span>
+          </div>
+          <div class="main__wrap">
+            <h2>Kiểu chơi: <span class="level__title"></span></h2>
+            <div class="main__wrap__box"></div>
+          </div>
+          <div class="main__time">
+            <h5>Thời gian</h5>
+            <div class="time__bar__wrap">
+              <div class="time__bar"></div>
+              <span class="time__text"></span>
+            </div>
+          </div>
+          <audio class="fail__sound" src="./sounds/fail-buzzer-04.mp3"></audio>
+          <audio
+            class="success__sound"
+            src="./sounds/success-sound-effect.mp3"
+          ></audio>
+        </div>
+        <div class="main__board__layer"></div>
+        <div class="main__board__box"></div>
+      </div>
+      <div class="menu__board">
+        <div class="menu__board__wrap">
+          <h1>Pikachu</h1>
+          <button class="start__btn">Bắt đầu chơi</button>
+        </div>
+        <div class="menu__board__layer"></div>
+      </div>
+    </div>
+    <script type="module" src="./js/game.js"></script>
+  </body>
+</html>
